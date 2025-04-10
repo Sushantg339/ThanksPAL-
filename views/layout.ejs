@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="/" class="logo">
+                    <img src="/images/logo.png" alt="Buy Me A Coffee">
+                </a>
+                <div class="nav-links desktop-nav">
+                    <a href="/explore">Explore</a>
+                    <a href="/pricing">Pricing</a>
+                    <a href="/resources">Resources</a>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="nav-links desktop-nav">
+                    <a href="/login" class="btn-login">Login</a>
+                    <a href="/signup" class="btn-signup">Sign up</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="mobile-nav-links">
+                <a href="/explore">Explore</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/resources">Resources</a>
+                <a href="/login">Login</a>
+                <a href="/signup">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <%- body %>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img src="/images/logo.png" alt="Buy Me A Coffee">
+                <p>A supporter is worth a thousand followers.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">For Creators</a></li>
+                        <li><a href="#">For Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Buy Me A Coffee (Clone). All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 

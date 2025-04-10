@@ -1,0 +1,105 @@
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>A supporter is worth a thousand followers.</h1>
+        <p>Accept donations. Start a membership. Sell anything you like. It's easier than you think.</p>
+        <div class="hero-buttons">
+            <a href="/signup" class="btn btn-primary">Start my page</a>
+            <a href="/explore" class="btn btn-secondary">Explore creators</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="/images/hero-image.png" alt="Buy Me A Coffee Hero">
+    </div>
+</section>
+
+<!-- Featured Creators Section -->
+<section class="featured-creators">
+    <div class="section-heading">
+        <h2>Featured Creators</h2>
+        <a href="/explore" class="btn-link">View all <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="creators-grid">
+        <% featuredCreators.forEach(creator => { %>
+            <div class="creator-card">
+                <div class="creator-image">
+                    <img src="<%= creator.imageUrl %>" alt="<%= creator.name %>">
+                </div>
+                <div class="creator-info">
+                    <h3><%= creator.name %></h3>
+                    <p class="creator-description"><%= creator.description %></p>
+                    <p class="creator-supporters"><%= creator.supporters %> supporters</p>
+                </div>
+                <a href="#" class="btn btn-outline">Support</a>
+            </div>
+        <% }); %>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="section-heading center">
+        <h2>Why creators love Buy Me A Coffee</h2>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Simple to use</h3>
+            <p>Set up in minutes and get back to what you do best. We don't get in the way of your creativity.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>No monthly fees</h3>
+            <p>Keep more of what you earn with our simple 5% transaction fee. No hidden costs or monthly charges.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Works everywhere</h3>
+            <p>Share your page anywhere your audience is - social media, your website, or in your newsletter.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="section-heading center">
+        <h2>Loved by 300,000+ creators worldwide</h2>
+    </div>
+    <div class="testimonials-carousel">
+        <div class="testimonial-card">
+            <p class="testimonial-text">"Buy Me A Coffee has been the easiest way for me to connect with my supporters directly."</p>
+            <div class="testimonial-author">
+                <img src="/images/testimonial1.jpg" alt="Testimonial author">
+                <div>
+                    <h4>Sarah Johnson</h4>
+                    <p>Digital Artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"I was able to quit my day job and focus on my podcast full-time thanks to my supporters on Buy Me A Coffee."</p>
+            <div class="testimonial-author">
+                <img src="/images/testimonial2.jpg" alt="Testimonial author">
+                <div>
+                    <h4>Mark Wilson</h4>
+                    <p>Podcast Host</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ready to start accepting support?</h2>
+        <p>Join thousands of creators and start your page today. It takes less than a minute to sign up.</p>
+        <a href="/signup" class="btn btn-primary">Get started for free</a>
+    </div>
+</section> 
